@@ -1,0 +1,280 @@
+a) int hungry
+
+Legal: hungry is a valid identifier. because it starts with  a letter and containing only letters and no special symbols. It doesn't start with a digit.
+
+b)int 2AB
+
+Illegal: It starts with a digit. Java identifiers cannot start with a digit. 2AB starts with 2, which makes it invalid.
+
+c) 312.2
+
+Illegal: 312.2 is not a legal identifier.It starts with a digit. Identifiers cannot contain decimal points.
+
+d)int MOBILE
+
+Legal: MOBILE is a legal identifier. It starts with a letter and contains only uppercase letters, which is allowed in Java. It doesn't start with number or forbidden special characters.
+
+e) "Ans"
+
+Illegal: "Ans" is not legal. The double quotes make it a string literal, not a variable name. Variable cannot contain quotation.
+
+f) $30
+
+legal: $30 is legal in Java because identifiers can start with $.
+
+g) Yes/No
+
+Illegal: Yes/No is illegal because the / character is not allowed in identifiers. Only letters, digits, _, and $ are permitted. Yes and No are not legal identifiers because it is really close to True and False.
+
+h) student-id
+
+Illegal: student-id is invalid because the - character is not allowed in identifiers. 
+
+i) A+3
+
+Illegal: A+3 is invalid because + is not allowed in identifiers. Symbols like (+,-,/,*,%) can not be a variable.
+
+j) 'X'
+
+Illegal: 'X' is invalid because it is has single quote. Variable cannot contain single quote.
+ 
+k) return
+
+Illegal: return is a reserved keyword in Java. It cannot be used as an identifier. 
+
+
+
+//11
+public class main {
+  
+  public static void main(String[] args) { 
+    //2.1
+    int var=1;
+    System.out.println("2.1--> "+var);
+    //2.2
+    int var_2=2;
+    int add=var+var_2;
+    System.out.println("2.2--> "+add);
+    //2.3
+    int pro=var*var_2;
+    int div=var/var_2;
+    
+   
+    System.out.println("2.3--> Product- "+pro+"  and   division- "+div);
+   
+    //2.4
+    double var_3=5.0;
+    double var_4=2.0;
+    double add_1=var_3+var_4;
+    double pro_1=var_3*var_4;
+    double div_1=var_3/var_4;
+    
+    System.out.println("2.4--> addition- "+add_1+", Product- "+pro_1+" and Division- "+div_1);
+    
+    
+    //2.5
+    int var_5=23;
+    double var_6=2.0;
+    double add_2=var_5+var_6;
+    double pro_2=var_5*var_6;
+    double div_2=var_5/var_6;
+    
+    System.out.println("2.5--> addition-  "+add_2+" , product-  "+pro_2+ " and division-  "+div_2);
+    
+    //2.6
+    String var_7="5";
+    String var_8="2";
+    String add_3=var_7+var_8;
+    
+    
+    System.out.println("2.6--> additon "+add_3);
+    
+    //2.6
+    int var_9=5;
+    String var_10="2";
+    String add_4=var_9+var_10;
+    
+    
+    System.out.println("2.6--> vice "+add_4);
+    
+    String var_11="5";
+    int var_12=2;
+    String add_5=var_11+var_12;
+    
+    
+    System.out.println("2.6--> Versa "+add_5);
+
+   }
+  
+}
+
+//12
+public class Cir {
+  
+  public static void main(String[] args) { 
+    
+    double r=4;
+    double area=Math.PI*(r*r);
+    System.out.println("12--> Area"+area); 
+  }
+}
+
+//13
+public class Last {
+  public static void main(String[] args) { 
+    int v=2021;
+    int y=v%100;
+    System.out.println("13--> Last 2 digits- "+y);
+
+  } 
+}
+
+
+//14
+public class Conv {
+ 
+  public static void main(String[] args) { 
+    
+    double inch=1000;
+    double conv=inch*0.0254;
+    System.out.println("14--> Given value for inch:"+ inch);
+    System.out.println( inch+" inch is "+ conv+ " meters.");
+    
+  }
+}
+
+//15(a)
+public class Swap {
+  public static void main(String[] args) {
+    //a.
+     int x=12;
+     int   y=13;
+    
+    int temp=x;
+    x=y;
+    y=temp;
+    System.out.println("(a) The given values were for x= "+x+" and for y= "+y+" now it is for x= "+x+" and for y= "+y+".");
+    
+
+      
+  }
+ 
+}
+
+//15(b)
+public class Swapout {
+  
+  public static void main(String[] args) { 
+    //11.(b)
+    int x = 12;
+    int y = 13;
+    
+    x=x+y;
+    y=x-y;
+    x=x-y;
+    
+    System.out.println("(b) The given values were for x= "+x+" and for y= "+y+" now it is for x= "+x+" and for y= "+y+".");
+    
+  }
+ 
+  
+}
+
+
+//16
+public class Minconv {
+  
+  public static void main(String[] args) { 
+    
+   
+        int mins = 3456789;
+        int minsPerDay = 60 * 24;
+        int daysPerYear = 365;
+
+        int days = mins / minsPerDay;
+        int yrs = days / daysPerYear;
+        int remDays = days % daysPerYear;
+
+        System.out.println(mins + " minutes is approximately " + yrs + " years and " + remDays + " days.");
+    }
+}
+
+    
+//17
+public class Variablecalc {
+  
+  
+  public static void main(String[] args) { 
+        int a = 2;
+        int b = 5;
+        int c = 8;
+
+        int d = (2 * b * ((c - a) / 3)) + 7;
+
+        System.out.println("The value of d is: " + d);
+    }
+}
+
+
+//18
+public class Idchange {
+  
+  
+  public static void main(String[] args) {  
+        int id = 23201475;
+
+        int d1 = id % 10;
+        int d2 = (id / 10) % 10;
+
+        System.out.println("Reversed rightmost digits: " + d1 + ", " + d2);
+    }
+}
+
+//19
+public class Hex {
+  
+  
+  public static void main(String[] args) { 
+        int a=8;
+        int x=a/2;
+        int b=3;
+        double s=Math.sqrt((x*x)+(b*b));
+        double p = 6 * s;
+
+        double A = (3 * Math.sqrt(3) / 2) * Math.pow(s, 2);
+
+        System.out.println("Circumference of the Hexagon: " + p);
+        System.out.println("Area of the Hexagon: " + A);
+    }
+}
+
+    
+ //20
+public class Tri {
+  
+  
+  public static void main(String[] args) { 
+    
+        double a = 4.5;
+        double b = 9.5;
+
+        double c = Math.sqrt(a * a + b * b);
+
+        double sinA = a / c;
+        double cosA = b / c;
+
+        double sinB = b / c;
+        double cosB = a / c;
+
+        System.out.println("Sin A: " + sinA);
+        System.out.println("Cos A: " + cosA);
+        System.out.println("Sin B: " + sinB);
+        System.out.println("Cos B: " + cosB);
+    }
+}
+
+    
+ 
+    
+  
+
